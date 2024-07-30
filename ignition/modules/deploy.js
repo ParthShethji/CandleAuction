@@ -3,7 +3,6 @@ const { buildModule } = require("@nomicfoundation/hardhat-ignition/modules");
 const { ethers } = require("hardhat");
 
 const Three_MIN = 180; 
-// const ONE_ETHER = 1_000_000_000_000_000_000n; 
 
 module.exports = buildModule("CandleAuctionModule", (m) => {
   const biddingTime = m.getParameter("biddingTime", Three_MIN); 
